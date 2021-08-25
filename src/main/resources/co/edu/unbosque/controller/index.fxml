@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="body" stylesheets="@css/style-index.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.unbosque.controller.ControllerIndex">
+   <children>
+      <Pane fx:id="panelCelular" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="356.0" fitWidth="1200.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../images/5.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="415.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventario de Celulares">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Text>
+            <TableView fx:id="tableCelulares" layoutX="100.0" layoutY="278.0" prefHeight="322.0" prefWidth="1000.0" styleClass="panel" stylesheets="@css/style-index.css">
+              <columns>
+                <TableColumn fx:id="tableIMEI" editable="false" prefWidth="170.40005493164062" text="IMEI" />
+                  <TableColumn fx:id="tableFecha" editable="false" prefWidth="112.0" text="Fecha de registro" />
+                  <TableColumn fx:id="tableNombre" editable="false" prefWidth="342.39996337890625" text="Nombre" />
+                  <TableColumn fx:id="tablePrecio" editable="false" prefWidth="118.4000244140625" text="Precio" />
+                  <TableColumn fx:id="tableCapacidadDeBateria" editable="false" prefWidth="139.20001220703125" text="Capacidad de Batería" />
+                  <TableColumn fx:id="tableTamanioPantalla" editable="false" prefWidth="110.400146484375" text="Tamaño Pantalla " />
+              </columns>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TableView>
+            <TextField fx:id="txtFiltrar" layoutX="341.0" layoutY="188.0" onAction="#filtrar" prefHeight="35.0" prefWidth="519.0" styleClass="panel" stylesheets="@css/style-index.css">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <HBox layoutX="240.0" layoutY="633.0" prefHeight="44.0" prefWidth="722.0" spacing="30.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#buttonAbrirVentanaRegistrarCelular" prefHeight="35.0" prefWidth="176.0" styleClass="button-registrar" stylesheets="@css/style-index.css" text="Registrar" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#eliminarCelular" prefHeight="35.0" prefWidth="176.0" styleClass="button-eliminar" stylesheets="@css/style-index.css" text="Eliminar" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#actualizarCelular" prefHeight="35.0" prefWidth="176.0" styleClass="button-actualizar" stylesheets="@css/style-index.css" text="Actualizar" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#informacionCelular" prefHeight="35.0" prefWidth="176.0" styleClass="button-info" stylesheets="@css/style-index.css" text="info" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <JFXButton layoutX="86.0" layoutY="20.0" onAction="#buttonTipoDeCelulares" prefHeight="40.0" prefWidth="188.0" text="Tipos de celulares">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

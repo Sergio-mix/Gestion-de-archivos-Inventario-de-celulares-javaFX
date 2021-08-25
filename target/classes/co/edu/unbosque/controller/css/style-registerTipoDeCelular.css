@@ -1,0 +1,39 @@
+.body{
+    -fx-background-color: #EEEEEE;
+}
+
+.panel{
+    -fx-background-color: #FFFFFF;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.text{
+    -fx-background-color: #EEEEEE;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.button{
+    -fx-background-color: #2083ea;
+    -fx-border-radius: 0 10 10 0;
+    -fx-background-radius: 0 10 10 0;
+}
+
+.button-atras{
+    -fx-background-color: #ea395a;
+    -fx-border-radius: 10 0 0 10;
+    -fx-background-radius: 10 0 0 10;
+}
+
+.button-registrar{
+    -fx-background-color: #12e299;
+    -fx-border-radius: 0 10 10 0;
+    -fx-background-radius: 0 10 10 0;
+}
+
+.button-actualizar{
+    -fx-background-color: #2083ea;
+    -fx-border-radius: 0 10 10 0;
+    -fx-background-radius: 0 10 10 0;
+}

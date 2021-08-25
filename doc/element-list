@@ -1,0 +1,5 @@
+module:org.example
+co.edu.unbosque.controller
+co.edu.unbosque.model
+co.edu.unbosque.model.dto
+co.edu.unbosque.model.persistence

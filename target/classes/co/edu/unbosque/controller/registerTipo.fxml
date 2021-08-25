@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" styleClass="body" stylesheets="@css/style-registerTipoDeCelular.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.unbosque.controller.ControllerRegistrarTipoDeCelular">
+   <children>
+      <Pane fx:id="panel1" layoutX="46.0" layoutY="38.0" prefHeight="424.0" prefWidth="784.0" styleClass="panel" stylesheets="@css/style-registerTipoDeCelular.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <VBox layoutX="28.0" layoutY="45.0" prefHeight="373.0" prefWidth="278.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Marca">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cMarca" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="cModelo" promptText="Modelo" styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Es Smartphone">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cEsSmartphone" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Color">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="txtColor" promptText="Color" styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Garantia (Meses)">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="cGarantia" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <Text layoutX="100.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacion Basica">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <VBox layoutX="341.0" layoutY="44.0" prefHeight="314.0" prefWidth="278.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Memoria Interna (GB)">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cMemoriaInterna" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Memoria Expandible (GB)">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cMemoriaExpandible" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Memoria RAM">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cMemoriaRam" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Marca Procesador">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cMarcaProcesador" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <Text layoutX="501.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Almacenamiento procesamiento">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Separator layoutX="325.0" layoutY="66.0" orientation="VERTICAL" prefHeight="346.0" prefWidth="2.0" />
+            <VBox layoutX="654.0" layoutY="43.0" prefHeight="314.0" prefWidth="278.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema Operativo">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cSistemaOperativo" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Version Sistema Operativo">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="txtVersionDelSistemaOperativo" promptText="Version" styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de nucleos">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cNumeroDeNucleos" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Velocidad del Procesador (GHz)">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cVelocidadDelProcesador" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <Button layoutX="793.0" layoutY="410.0" mnemonicParsing="false" onAction="#buttonSiguientePanel1" prefHeight="34.0" prefWidth="135.0" stylesheets="@css/style-registerTipoDeCelular.css" text="Seguiente" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtImei" disable="true" layoutX="405.0" layoutY="405.0" prefHeight="26.0" prefWidth="268.0" promptText="IMEI" styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css" visible="false">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </TextField>
+            <Separator layoutX="355.0" layoutY="357.0" prefHeight="16.0" prefWidth="564.0" />
+            <Text fx:id="tImei" layoutX="405.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMEI" visible="false">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="panel2" layoutX="38.0" layoutY="38.0" prefHeight="424.0" prefWidth="784.0" styleClass="panel" stylesheets="@css/style-registerTipoDeCelular.css" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <VBox layoutX="28.0" layoutY="45.0" prefHeight="373.0" prefWidth="278.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ancho (Px)">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cAnchoDeLaPantalla" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Largo (Px)">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cLargoDeLaPantalla" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Calidad">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cCalidadDeLaPantalla" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <Text layoutX="100.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resolucion Pantalla">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <VBox layoutX="341.0" layoutY="44.0" prefHeight="373.0" prefWidth="278.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Pantalla">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cTipoDePantalla" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Resolucion Pantalla">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cResolucionDeLaPantalla" disable="true" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tamaño Pantalla (Pulgadas)">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cTamanioDeLaPantalla" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <Text layoutX="415.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="imagen y pantalla">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Separator layoutX="325.0" layoutY="66.0" orientation="VERTICAL" prefHeight="346.0" prefWidth="2.0" />
+            <VBox layoutX="654.0" layoutY="44.0" prefHeight="314.0" prefWidth="278.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Camara Frontal">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cTipoDeCamaraFrontal" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Resolucion Camara Frontal Principal">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cResolucionDeLaCamaraFrontalPrincipal" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Camara Posterior">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cTipoDeCamaraPosterior" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Resolucion Camara Posterior Principal (Mpx)">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cResolucionCamaraPosterior" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <Button layoutX="793.0" layoutY="410.0" mnemonicParsing="false" onAction="#buttonSiguientePanel2" prefHeight="34.0" prefWidth="135.0" stylesheets="@css/style-registerTipoDeCelular.css" text="Seguiente" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Separator layoutX="640.0" layoutY="66.0" orientation="VERTICAL" prefHeight="346.0" prefWidth="2.0" />
+            <Text layoutX="763.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Camara">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button layoutX="62.0" layoutY="410.0" mnemonicParsing="false" onAction="#buttonAtrasPanel2" prefHeight="34.0" prefWidth="115.0" styleClass="button-atras" stylesheets="@css/style-registerTipoDeCelular.css" text="Atras" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="panel3" layoutX="48.0" layoutY="48.0" prefHeight="424.0" prefWidth="784.0" styleClass="panel" stylesheets="@css/style-registerTipoDeCelular.css" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Separator layoutX="325.0" layoutY="66.0" orientation="VERTICAL" prefHeight="346.0" prefWidth="2.0" />
+            <VBox layoutX="27.0" layoutY="66.0" prefHeight="314.0" prefWidth="278.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Resolucion Otras Camaras Posteriores">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cResolucionOtrasCamarasPosteriores" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Flash Frontal">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="CFlashFrontal" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Flash Posterior">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cFlashPosterior" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <Button fx:id="buttonRegistrar" layoutX="755.0" layoutY="410.0" mnemonicParsing="false" onAction="#registrarTipoDeCelular" prefHeight="34.0" prefWidth="173.0" styleClass="button-registrar" stylesheets="@css/style-registerTipoDeCelular.css" text="Registrar Tipo de Celular" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Separator layoutX="640.0" layoutY="66.0" orientation="VERTICAL" prefHeight="346.0" prefWidth="2.0" />
+            <Text layoutX="136.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Camara">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <VBox layoutX="350.0" layoutY="66.0" prefHeight="314.0" prefWidth="278.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Capacidad de la Bateria (mAh)">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cCapasidadDeLaBateria" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Resistencia al Agua">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cResistenciaAlAgua" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Opciones de Conectividad">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cOpcionesDeConectividad" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <Text layoutX="396.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caracteristicas Tecnicas">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="741.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conectividad">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <VBox layoutX="668.0" layoutY="66.0" prefHeight="235.0" prefWidth="278.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Red de Transmision de Datos">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cRedDeTransmisionDeDatos" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Espacios Para SIM Card">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cEspaciosParaSimCard" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tipos de Puertos Entradas y Salidas">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="cTiposDePuertosYSalidas" prefHeight="26.0" prefWidth="282.0" promptText="Seleccione..." styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <Separator layoutX="693.0" layoutY="315.0" prefWidth="200.0" />
+            <Text layoutX="679.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtPrecio" layoutX="672.0" layoutY="353.0" prefHeight="26.0" prefWidth="257.0" promptText="Precio" styleClass="text" stylesheets="@css/style-registerTipoDeCelular.css" />
+            <Button layoutX="51.0" layoutY="410.0" mnemonicParsing="false" onAction="#buttonAtrasPanel3" prefHeight="34.0" prefWidth="115.0" styleClass="button-atras" text="Atras" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonActualizar" layoutX="755.0" layoutY="410.0" mnemonicParsing="false" onAction="#actualizar" prefHeight="34.0" prefWidth="173.0" styleClass="button-actualizar" stylesheets="@css/style-registerTipoDeCelular.css" text="Actualizar tipo" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
